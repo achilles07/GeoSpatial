@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:background="@android:color/background_light">
+    <TextView
+        android:layout_width="match_parent" android:background="@color/colorPrimaryDark"
+        android:layout_height="wrap_content" android:text="@string/title_tool_measure"
+        android:padding="3dp" android:textColor="@android:color/white" android:textDirection="rtl"
+        android:textSize="@dimen/text_size_title"/>
+    <TableLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:paddingTop="15dp" android:paddingBottom="15dp" android:stretchColumns="*">
+        <TableRow>
+            <TextView android:text="@string/label_measure_tool_length" android:textDirection="rtl"
+                android:paddingEnd="5dp" android:textSize="@dimen/text_size_tool_area"
+                android:textColor="@android:color/black"/>
+            <TextView android:text="@string/value_dummy_measure_tool" android:paddingStart="5dp"
+                android:textSize="@dimen/text_size_tool_area" android:textColor="@android:color/black"
+                android:textStyle="italic" android:id="@+id/tv_frag_tool_measure_length"/>
+        </TableRow>
+        <TableRow>
+            <TextView android:text="@string/label_measure_tool_area" android:layout_weight="1" android:paddingEnd="5dp"
+                android:textDirection="rtl" android:textSize="@dimen/text_size_tool_area"
+                android:textColor="@android:color/black" android:textStyle="italic"/>
+            <TextView android:text="@string/value_dummy_measure_tool" android:layout_weight="1" android:paddingStart="5dp"
+                android:textSize="@dimen/text_size_tool_area" android:textColor="@android:color/black"
+                android:textStyle="italic" android:id="@+id/tv_frag_tool_measure_area"/>
+        </TableRow>
+        <TableRow>
+            <TextView android:text="@string/label_measure_tool_perimeter" android:layout_weight="1" android:paddingEnd="5dp"
+                android:textDirection="rtl" android:textSize="@dimen/text_size_tool_area"
+                android:textColor="@android:color/black"/>
+            <TextView android:text="@string/value_dummy_measure_tool" android:layout_weight="1" android:paddingStart="5dp"
+                android:textSize="@dimen/text_size_tool_area" android:textColor="@android:color/black"
+                android:textStyle="italic" android:id="@+id/tv_frag_tool_measure_perimeter"/>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

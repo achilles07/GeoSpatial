@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="lnt.in.geospatial.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+    <com.esri.android.map.MapView
+        android:layout_width="0dp" android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent"
+        mapoptions.MapType="Topo" mapoptions.center="13.023261, 80.178749" mapoptions.ZoomLevel="16"
+        android:id="@+id/map"/>
+    <RelativeLayout
+        android:layout_width="0dp" android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <Spinner
+            android:id="@+id/spin_basemap_switcher" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"/>
+        <FrameLayout
+            android:layout_width="match_parent" android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content" android:id="@+id/frag_container_tool_display"
+            android:visibility="gone"/>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_measure_tool"
+            android:icon="@android:drawable/ic_menu_crop"
+            android:title="@string/title_tool_measure" />
+        <item
+            android:id="@+id/nav_geo_tagging"
+            android:icon="@android:drawable/ic_menu_camera"
+            android:title="@string/title_tool_geo_tagging" />
+        <item
+            android:id="@+id/nav_coordinate_converter"
+            android:icon="@android:drawable/ic_menu_send"
+            android:title="@string/title_tool_coordinate_converter" />
+        <item
+            android:id="@+id/nav_trail_point_tracker"
+            android:icon="@android:drawable/ic_menu_mapmode"
+            android:title="@string/title_tool_trail_point_tracker" />
+        <item
+            android:id="@+id/nav_current_location"
+            android:icon="@android:drawable/ic_menu_mylocation"
+            android:title="@string/title_tool_current_location" />
+    </group>
+</menu>

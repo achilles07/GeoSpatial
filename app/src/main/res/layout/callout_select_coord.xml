@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Selected Coordinate" android:drawableEnd="@android:drawable/ic_menu_close_clear_cancel"
+        android:background="@color/colorAccent" android:layout_gravity="center_vertical"
+        android:id="@+id/tv_callout_title_select_coord" android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_title" android:paddingStart="3dp"/>
+    <TableLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TableRow>
+            <TextView android:text="projected : " android:layout_gravity="end"
+                android:paddingEnd="5dp"/>
+            <TextView android:id="@+id/tv_callout_select_coord_proj" android:paddingStart="5dp"/>
+        </TableRow>
+        <TableRow>
+            <TextView android:text="WGS DD : " android:layout_gravity="end"
+                android:paddingEnd="5dp"/>
+            <TextView android:id="@+id/tv_callout_select_coord_dd"/>
+        </TableRow>
+        <TableRow>
+            <TextView android:text="WGS DMS : " android:layout_gravity="end"
+                android:paddingEnd="5dp"/>
+            <TextView android:id="@+id/tv_callout_select_coord_dms"/>
+        </TableRow>
+        <TableRow>
+            <TextView android:text="UTM : " android:layout_gravity="end"
+                android:paddingEnd="5dp"/>
+            <TextView android:id="@+id/tv_callout_select_coord_utm"/>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

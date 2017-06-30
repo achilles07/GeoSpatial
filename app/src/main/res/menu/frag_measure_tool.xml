@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/item_measure_tool_clear" android:icon="@android:drawable/ic_menu_close_clear_cancel"
+        app:showAsAction="always" android:title="Clear" android:enabled="true"/>
+    <item android:id="@+id/item_measure_tool_undo" android:icon="@android:drawable/ic_menu_revert"
+        app:showAsAction="always" android:title="Undo" android:enabled="true"/>
+</menu>

@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">GeoSpatial</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- HEADING/TITLE -->
+    <string name="title_tool_measure">Measuring Tool</string>
+    <string name="title_tool_geo_tagging">Geo-Tagging</string>
+    <string name="title_tool_coordinate_converter">Coordinate Converter</string>
+    <string name="title_tool_trail_point_tracker">Trail Point Tracker</string>
+    <string name="title_tool_current_location">I am Lost</string>
+
+    <!-- LABEL -->
+    <string name="label_measure_tool_length">Measured Length</string>
+    <string name="label_measure_tool_area">Measured Area</string>
+    <string name="label_measure_tool_perimeter">Measured Perimeter</string>
+
+    <!-- INFO/WARNING/ERROR/PROGRESS -->
+    <string name="msg_progress_geotag_get_photos">Please wait while retrieving geo-tagged photos&#8230;</string>
+    <string name="msg_info_geotag_no_photos">"No geo-tagged images taken.\n Please click on camera icon on the top to take a geo-tagged photo</string>
+
+    <!-- VALUE DUMMY/VALUE DEFAULT -->
+    <string name="value_dummy_measure_tool">NaN</string>
+</resources>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="@android:color/background_light">
+    <TextView
+        android:layout_width="match_parent" android:background="@color/colorPrimaryDark"
+        android:layout_height="wrap_content" android:text="@string/title_tool_coordinate_converter"
+        android:padding="3dp" android:textColor="@android:color/white" android:textDirection="rtl"
+        android:textSize="@dimen/text_size_title"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:animateLayoutChanges="true">
+        <Switch android:layout_width="0dp" android:layout_weight="1"
+            android:layout_height="wrap_content" android:textOn="DMS"
+            android:text="WGS Type" android:textOff="DD"
+            android:id="@+id/switch_coord_conv_wgstype" android:textAlignment="viewEnd"
+            android:switchPadding="5dp" android:textSize="@dimen/text_size_tool_area"/>
+        <Switch android:layout_width="0dp" android:layout_weight="1"
+            android:layout_height="wrap_content" android:textOn="ToWGS"
+            android:textOff="ToUTM" android:textAlignment="viewEnd"
+            android:text="Conversion Type" android:id="@+id/switch_coord_conv_convtype"
+            android:switchPadding="5dp" android:textSize="@dimen/text_size_tool_area"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:id="@+id/linlyt_container_dms"
+        android:layout_height="wrap_content" android:orientation="horizontal"
+        android:visibility="gone" android:animateLayoutChanges="true">
+        <EditText android:layout_width="0dp" android:hint="Lat Deg"
+            android:layout_height="wrap_content" android:layout_weight="1"
+            android:id="@+id/et_coordconv_dms_lat_deg"/>
+        <EditText android:layout_width="0dp" android:hint="Lat Min"
+            android:layout_height="wrap_content" android:layout_weight="1"
+            android:id="@+id/et_coordconv_dms_lat_min"/>
+        <EditText android:layout_width="0dp" android:hint="Lat Sec"
+            android:layout_height="wrap_content" android:layout_weight="1"
+            android:id="@+id/et_coordconv_dms_lat_sec"/>
+        <EditText android:layout_width="0dp" android:hint="Lng Deg"
+            android:layout_height="wrap_content" android:layout_weight="1"
+            android:id="@+id/et_coordconv_dms_lng_deg"/>
+        <EditText android:layout_width="0dp" android:hint="Lng Min"
+            android:layout_height="wrap_content" android:layout_weight="1"
+            android:id="@+id/et_coordconv_dms_lng_min"/>
+        <EditText android:layout_width="0dp" android:hint="Lng Sec"
+            android:layout_height="wrap_content" android:layout_weight="1"
+            android:id="@+id/et_coordconv_dms_lng_sec"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:id="@+id/linlyt_container_dd">
+        <EditText android:layout_width="0dp" android:hint="Latitude"
+            android:layout_height="wrap_content" android:layout_weight="1"
+            android:inputType="numberDecimal" android:id="@+id/et_coordconv_dd_lat"/>
+        <EditText android:layout_width="0dp" android:hint="Longitude"
+            android:layout_height="wrap_content" android:layout_weight="1"
+            android:inputType="numberDecimal" android:id="@+id/et_coordconv_dd_lng"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText android:layout_width="0dp" android:hint="Zone"
+            android:layout_height="wrap_content" android:layout_weight="1"
+            android:inputType="text" android:id="@+id/et_coordconv_utm_zone"/>
+        <EditText android:layout_width="0dp" android:hint="Northing"
+            android:layout_height="wrap_content" android:layout_weight="1"
+            android:inputType="numberDecimal"  android:id="@+id/et_coordconv_utm_north"/>
+        <EditText android:layout_width="0dp" android:hint="Easting"
+            android:layout_height="wrap_content" android:layout_weight="1"
+            android:inputType="numberDecimal" android:id="@+id/et_coordconv_utm_east"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <Button android:layout_width="0dp" android:layout_weight="1"
+            android:layout_height="wrap_content" android:text="Convert"
+            android:id="@+id/btn_coordconv_convert"/>
+        <Button android:layout_width="0dp" android:layout_weight="1"
+            android:layout_height="wrap_content" android:text="Convert n GO"
+            android:id="@+id/btn_coordconv_convertngo"/>
+        <Button android:layout_width="0dp" android:layout_weight="1"
+            android:layout_height="wrap_content" android:text="GO"
+            android:id="@+id/btn_coordconv_go"/>
+    </LinearLayout>
+</LinearLayout>
